@@ -1,0 +1,12 @@
+name: triton-env
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pytorch
+  - cudatoolkit=11.8
+  - pip
+  - pip:
+    - triton
