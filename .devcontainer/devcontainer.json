@@ -1,0 +1,8 @@
+{
+    "name": "Triton Development",
+    "image": "mcr.microsoft.com/devcontainers/python:3.8",
+    "features": {
+        "ghcr.io/rocker-org/devcontainer-features/miniforge:1": {}
+    },
+    "postCreateCommand": "conda create -n triton python=3.8 cudatoolkit=11.8 pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia -y && conda activate triton && pip install triton"
+}
