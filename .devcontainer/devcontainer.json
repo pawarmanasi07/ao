@@ -1,0 +1,13 @@
+{
+    "name": "GPU Codespace",
+    "features": {
+        "ghcr.io/nvidia/gpu-support:1": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python"
+            ]
+        }
+    }
+}
